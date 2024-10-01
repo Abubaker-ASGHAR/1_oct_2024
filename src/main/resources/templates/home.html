@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" th:href="@{/css/styles.css}">
+</head>
+<body>
+<h1 th:text="${message}">Home Page</h1>
+<p>Logged in as: <span th:text="${#authentication.name}">User</span></p>
+<a th:href="@{/secured}">Secured Page</a> |
+<a th:href="@{/logout}">Logout</a>
+</body>
+</html>
